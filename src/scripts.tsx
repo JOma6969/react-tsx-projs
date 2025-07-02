@@ -26,7 +26,7 @@ export const Accordion_Data: Accordion[] = [
   }
 ]
 
-interface colors {
+export interface colors {
   hexCode: string;
   rgbCode: string;
 }
@@ -41,11 +41,11 @@ export const colorsArr: colors[] = [
     rgbCode: "rgb(0, 0, 0)"
   }, 
   {
-    hexCode: "#fc0000",
+    hexCode: "#FF0000",
     rgbCode: "rgb(255, 0, 0)"
   }, 
   {
-    hexCode: "#0dfc00",
+    hexCode: "#00ff00",
     rgbCode: "rgb(0, 255, 0)"
   }, 
   {
