@@ -58,6 +58,6 @@ export const ImgArr: string[] = [
   "https://media.istockphoto.com/id/1202957718/photo/macbook-pro-16-inch-with-touchbar-focus-on-macbook-pro-logo.jpg?s=612x612&w=0&k=20&c=fzb-Ux04y_KFGK1lKz8lLSH544PvAiqFaHe3monLfbc=",
 
   "https://cdn.pixabay.com/photo/2016/10/12/13/32/office-1734485_640.jpg",
-  
+
   "https://media.gettyimages.com/id/1243275868/photo/a-2021-apple-macbook-pro-laptop-computer-taken-on-november-26-2021.jpg?s=612x612&w=0&k=20&c=jlLOOi9jju3kTq4x8GYocIzRJWIPQfF0VEVZMrenTN4=",
 ];

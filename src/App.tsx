@@ -1,8 +1,8 @@
 // import Accordion from "./components/Accordion"
 // import RandomColorGen from "./components/RandomColorGen"
 // import StarRating from "./components/StarRating"
-
-import ImgSlider from "./components/ImgSlider"
+// import ImgSlider from "./components/ImgSlider"
+import LoadMoreProducts from "./components/LoadMoreProducts"
 
 const App = () => {
   return (
@@ -10,7 +10,8 @@ const App = () => {
       {/* <Accordion /> */}
       {/* <RandomColorGen /> */}
       {/* <StarRating /> */}
-      <ImgSlider />
+      {/* <ImgSlider /> */}
+      <LoadMoreProducts />
     </div>
   )
 }
