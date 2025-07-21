@@ -6,8 +6,10 @@
 // import LightDarkTheme from "./components/LightDarkTheme"
 // import QrGen from "./components/QrGen"
 // import ModalPopUp from "./components/ModalPopUp"
+// import AutocompleteSearch from "./components/AutocompleteSearch"
+// import MouseShadow from "./components/MouseShadow"
 
-import AutocompleteSearch from "./components/AutocompleteSearch"
+import TicTacToe from "./components/TicTacToe"
 
 
 const App = () => {
@@ -21,7 +23,9 @@ const App = () => {
       {/* <LightDarkTheme /> */}
       {/* <QrGen /> */}
       {/* <ModalPopUp /> */}
-      <AutocompleteSearch />
+      {/* <AutocompleteSearch /> */}
+      {/* <MouseShadow /> */}
+      <TicTacToe />
     </div>
   )
 }
