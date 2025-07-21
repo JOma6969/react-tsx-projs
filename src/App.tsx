@@ -2,7 +2,9 @@
 // import RandomColorGen from "./components/RandomColorGen"
 // import StarRating from "./components/StarRating"
 // import ImgSlider from "./components/ImgSlider"
-import LoadMoreProducts from "./components/LoadMoreProducts"
+// import LoadMoreProducts from "./components/LoadMoreProducts"
+
+import LightDarkTheme from "./components/LightDarkTheme"
 
 const App = () => {
   return (
@@ -11,7 +13,8 @@ const App = () => {
       {/* <RandomColorGen /> */}
       {/* <StarRating /> */}
       {/* <ImgSlider /> */}
-      <LoadMoreProducts />
+      {/* <LoadMoreProducts /> */}
+      <LightDarkTheme />
     </div>
   )
 }
