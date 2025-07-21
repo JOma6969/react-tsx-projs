@@ -5,8 +5,9 @@
 // import LoadMoreProducts from "./components/LoadMoreProducts"
 // import LightDarkTheme from "./components/LightDarkTheme"
 // import QrGen from "./components/QrGen"
+// import ModalPopUp from "./components/ModalPopUp"
 
-import ModalPopUp from "./components/ModalPopUp"
+import AutocompleteSearch from "./components/AutocompleteSearch"
 
 
 const App = () => {
@@ -19,7 +20,8 @@ const App = () => {
       {/* <LoadMoreProducts /> */}
       {/* <LightDarkTheme /> */}
       {/* <QrGen /> */}
-      <ModalPopUp />
+      {/* <ModalPopUp /> */}
+      <AutocompleteSearch />
     </div>
   )
 }
