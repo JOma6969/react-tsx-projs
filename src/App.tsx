@@ -4,8 +4,10 @@
 // import ImgSlider from "./components/ImgSlider"
 // import LoadMoreProducts from "./components/LoadMoreProducts"
 // import LightDarkTheme from "./components/LightDarkTheme"
+// import QrGen from "./components/QrGen"
 
-import QrGen from "./components/QrGen"
+import ModalPopUp from "./components/ModalPopUp"
+
 
 const App = () => {
   return (
@@ -16,7 +18,8 @@ const App = () => {
       {/* <ImgSlider /> */}
       {/* <LoadMoreProducts /> */}
       {/* <LightDarkTheme /> */}
-      <QrGen />
+      {/* <QrGen /> */}
+      <ModalPopUp />
     </div>
   )
 }

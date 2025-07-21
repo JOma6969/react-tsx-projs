@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+.modal {
+  animation-name: slideDown;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideDown {
+  0% {
+    top: 0;
+  } 100% {
+    top: 50%
+  }
+}
