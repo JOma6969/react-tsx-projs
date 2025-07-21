@@ -3,8 +3,9 @@
 // import StarRating from "./components/StarRating"
 // import ImgSlider from "./components/ImgSlider"
 // import LoadMoreProducts from "./components/LoadMoreProducts"
+// import LightDarkTheme from "./components/LightDarkTheme"
 
-import LightDarkTheme from "./components/LightDarkTheme"
+import QrGen from "./components/QrGen"
 
 const App = () => {
   return (
@@ -14,7 +15,8 @@ const App = () => {
       {/* <StarRating /> */}
       {/* <ImgSlider /> */}
       {/* <LoadMoreProducts /> */}
-      <LightDarkTheme />
+      {/* <LightDarkTheme /> */}
+      <QrGen />
     </div>
   )
 }
