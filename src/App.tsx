@@ -8,8 +8,9 @@
 // import ModalPopUp from "./components/ModalPopUp"
 // import AutocompleteSearch from "./components/AutocompleteSearch"
 // import MouseShadow from "./components/MouseShadow"
+// import TicTacToe from "./components/TicTacToe"
 
-import TicTacToe from "./components/TicTacToe"
+import GithubProfileFInder from "./components/GithubProfileFInder"
 
 
 const App = () => {
@@ -25,7 +26,8 @@ const App = () => {
       {/* <ModalPopUp /> */}
       {/* <AutocompleteSearch /> */}
       {/* <MouseShadow /> */}
-      <TicTacToe />
+      {/* <TicTacToe /> */}
+      <GithubProfileFInder />
     </div>
   )
 }
