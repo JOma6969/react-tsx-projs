@@ -15,7 +15,7 @@ interface GitHubProfile {
 const GithubProfileFInder: React.FC = () => {
   const [user, setUser] = useState<GitHubProfile | null>(null);
   const [search, setSearch] = useState<string>("");
-  const [searchedUser, setSearchedUser] = useState<string>("JOma6969");
+  const [searchedUser, setSearchedUser] = useState<string>("4tknight");
   const [loading, setLoading] = useState<boolean>(false);
 
   useEffect(() => {
@@ -71,15 +71,16 @@ const GithubProfileFInder: React.FC = () => {
             <img
               src={user?.avatar_url}
               className="size-30 rounded-full block mx-auto"
-              alt=""
+              alt={`${user?.login} profile image`}
+              loading="lazy"
             />
             <p className="font-bold text-xl text-center mt-4">
               {user?.name} || {user?.login}
             </p>
             <div className="grid md:grid-cols-3 max-md:gap-3 justify-items-center mt-10">
-              <p className="w-[80%]">Public Repos: {user?.public_repos}</p>
-              <p className=" w-[80%]">Following: {user?.following}</p>
-              <p className=" w-[80%]">Followers: {user?.followers}</p>
+              <p className="max-md:w-[80%]">Public Repos: {user?.public_repos}</p>
+              <p className="max-md:w-[80%]">Following: {user?.following}</p>
+              <p className="max-md:w-[80%]">Followers: {user?.followers}</p>
             </div>
           </div>
         </div>
