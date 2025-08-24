@@ -9,9 +9,15 @@
 // import AutocompleteSearch from "./components/AutocompleteSearch"
 // import MouseShadow from "./components/MouseShadow"
 // import TicTacToe from "./components/TicTacToe"
+// import GithubProfileFInder from "./components/GithubProfileFInder"
+// import Resize from "./components/resize"
+// import Scroll from "./components/scrollToTop"
+// import ScrollToSection from "./components/scrollToSection";
+// import FileUploads from "./components/fileUploads";
+// import Cart from "./components/zustans-counter/Cart";
+// import ForwardRefParent from "./components/forwardRef";
 
-import GithubProfileFInder from "./components/GithubProfileFInder"
-
+import Zod from "./components/Zod";
 
 const App = () => {
   return (
@@ -27,9 +33,16 @@ const App = () => {
       {/* <AutocompleteSearch /> */}
       {/* <MouseShadow /> */}
       {/* <TicTacToe /> */}
-      <GithubProfileFInder />
+      {/* <GithubProfileFInder /> */}
+      {/* <Resize /> */}
+      {/* <Scroll /> */}
+      {/* <ScrollToSection /> */}
+      {/* <FileUploads /> */}
+      {/* <Cart /> */}
+      {/* <ForwardRefParent /> */}
+      <Zod />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

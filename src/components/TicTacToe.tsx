@@ -9,9 +9,10 @@ const TicTacToe: React.FC = () => {
     undefined
   ); // check if there is a winner (The name isn't all that descriptive)
   const [winner, setWinner] = useState<string | null>(null); // get the winner when the winner wins
-  
+
   useEffect(() => {
-    const winningLines: number[][] = [ // the lines that will determine when the user has won
+    const winningLines: number[][] = [
+      // the lines that will determine when the user has won
       // vertical:
       [0, 3, 6],
       [1, 4, 7],
@@ -25,12 +26,15 @@ const TicTacToe: React.FC = () => {
       // diagonal:
       [0, 4, 8],
       [2, 4, 6],
-    ]; 
+    ];
 
-    const checkWinner = () => { // a function to check if there is a winner
-      for (let i = 0; i < winningLines.length; i++) { // looping through it to get each line instance 
-        const [a, b, c] = winningLines[i]; // destructure for easy access 
-        if (board[a] && board[a] === board[b] && board[b] === board[c]) { // checking if they match (i.e have the same val)
+    const checkWinner = () => {
+      // a function to check if there is a winner
+      for (let i = 0; i < winningLines.length; i++) {
+        // looping through it to get each line instance
+        const [a, b, c] = winningLines[i]; // destructure for easy access
+        // checking if they match (i.e have the same val)
+        if (board[a] && board[a] === board[b] && board[b] === board[c]) {
           setWinner(board[a]); // set the winner to the letter and not the index
           setWinningLine([a, b, c]); // set the winning line to the indexs
           return a; // return the index
@@ -38,7 +42,8 @@ const TicTacToe: React.FC = () => {
       }
     };
 
-    if (board.every((tile) => tile !== "")) { // check if the board is full and there is no winner
+    if (board.every((tile) => tile !== "")) {
+      // check if the board is full and there is no winner
       setIsThereAWinner(false); // then setting the "isThereWInner" state to false
     }
 
@@ -55,7 +60,8 @@ const TicTacToe: React.FC = () => {
     setBoard(replica); // update the board state by setting it to replica
   };
 
-  const handleRestart = () => { // a function to rest all vals
+  const handleRestart = () => {
+    // a function to rest all vals
     setBoard([...Array(9).fill("")]);
     setIsX(true);
     setMoveIndex([]);
@@ -64,7 +70,8 @@ const TicTacToe: React.FC = () => {
     setIsThereAWinner(undefined);
   };
 
-  const handleUndo = () => { // function that uses the movesIndex arr to handle the undo
+  const handleUndo = () => {
+    // function that uses the movesIndex arr to handle the undo
     const movesReplica = [...moveIndex];
     const boardReplica = [...board];
     const lastEle = movesReplica[movesReplica.length - 1];
@@ -108,21 +115,23 @@ const TicTacToe: React.FC = () => {
         </button>
         <button
           onClick={handleUndo}
-          disabled={moveIndex.length === 0 || winner !== null || (isThereAWinner === false && board.every((tile) => tile !== ""))}
+          disabled={
+            moveIndex.length === 0 ||
+            winner !== null ||
+            (isThereAWinner === false && board.every((tile) => tile !== ""))
+          }
           className="cursor-pointer disabled:opacity-[0.5] border-2 py-2 px-8"
         >
           Undo
         </button>
       </div>
-      {
-        isThereAWinner === false && board.every((tile) => tile !== "") && !winner && <p>It is a tie!. kindly restart the game to continue.</p>
-      }
-      {
-        !winner && !board.every((tile) => tile !== "") && <p>The next player is {isX ? "X" : "O"}</p>
-      }
-      {
-        winner && <p>The winner is {winner} kindly restart the game</p>
-      }
+      {isThereAWinner === false &&
+        board.every((tile) => tile !== "") &&
+        !winner && <p>It is a tie!. kindly restart the game to continue.</p>}
+      {!winner && !board.every((tile) => tile !== "") && (
+        <p>The next player is {isX ? "X" : "O"}</p>
+      )}
+      {winner && <p>The winner is {winner} kindly restart the game</p>}
     </div>
   );
 };

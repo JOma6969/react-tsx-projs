@@ -84,7 +84,7 @@ const GithubProfileFInder: React.FC = () => {
             </div>
           </div>
         </div>
-      ) : <p className="absolute transform w-full text-center -translate-1/2 top-1/2 left-1/2">No such user exist!. Kindly, <span onClick={() => setSearchedUser("JOma6969")} className="cursor-pointer underline hover:text-blue-300 transition-all duration-500">refresh</span></p>}
+      ) : <p className="absolute transform w-full text-center -translate-1/2 top-1/2 left-1/2">No such user exist!. Kindly, <span onClick={() => setSearchedUser("4tknight")} className="cursor-pointer underline hover:text-blue-300 transition-all duration-500">refresh</span></p>}
     </div>
   );
 };
